@@ -1,0 +1,627 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+   
+   /* Navbar Styling */
+   .navbar {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Navbar Container */
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  /* Logo on Left */
+  .navbar-brand img {
+    height: 30px;
+  }
+  
+  /* Navigation Menu */
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-item {
+    margin: 0 15px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center; 
+  }
+  
+  .nav-link:hover{
+    color: orange;
+  }
+  
+  /* Arrow Icon Position */
+  .arrow-icon {
+    height: 14px;
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  /* Right Side Icons */
+  .navbar-brands img {
+    height: 40px;
+  }
+  
+  /* Mobile Menu Toggle Button (Hidden on large screens) */
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: black;
+  }
+  
+  /* Responsive Menu for Mobile & Tablet */
+  @media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: row;
+    }
+  
+    /* Show Menu Toggle Button on Tablet & Mobile */
+    .menu-toggle {
+        display: block;
+    }
+  
+    /* Hide Navbar Links Initially */
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        padding: 10px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    /* Show Menu when toggled */
+    .navbar-menu.show {
+        display: flex;
+    }
+  
+    .nav-item {
+        margin: 10px 0;
+    }
+  }
+  
+  /* HOME */
+  .img {
+      float: right;
+      width: 900px;
+      height: 500px;
+      object-fit: cover; /* Ensures the image doesn't stretch */
+  }
+  
+  .home h1 {
+      font-size: 50px;
+  }
+  
+  .home p {
+      font-size: 18px;
+  }
+  
+  .homecontent {
+      
+      border-radius: 8px;
+      width: 500px;
+      z-index: 1;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+      position: relative;
+      top: 40px;
+      padding: 20px;
+      margin-top: 20px;
+  }
+  
+  .homecontent button {
+      background-color: rgb(248, 135, 6);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+  }
+  
+  .homecontent button:hover {
+      background-color: rgb(248, 135, 9);
+  }
+  .img1{
+      top: 400px;
+      position: relative;
+      left: 500px;
+      height: 50px;
+  }
+  
+  /*  responsive */
+  @media (max-width: 1024px) {
+      .homecontent {
+          width: 80%;
+          margin: 20px ;
+          top: 30px;
+      }
+      .img1{
+          position: relative;
+          bottom: -90px;
+          left: 100px;
+      }
+  
+      .img {
+          width: 80%;
+          height: auto;
+          margin: 0 auto;
+          display: block; 
+      }
+  
+      .home h1 {
+          font-size: 40px;
+      }
+  
+      .home p {
+          font-size: 16px; 
+      }
+  
+      .homecontent button {
+          font-size: 14px;
+          padding: 8px 16px;
+      }
+  }
+  
+  @media (max-width: 768px) {
+      .homecontent {
+          width: 90%;
+          padding: 15px;
+          margin: 15px auto;
+          text-align: center;
+          top: 0;
+      }
+  
+      .img {
+          width: 100%;
+          height: auto;
+          margin: 0 auto;
+          display: block;
+      }
+  
+      .home h1 {
+          font-size: 30px; 
+      }
+  
+      .home p {
+          font-size: 14px;
+      }
+  
+      .homecontent button {
+          font-size: 14px;
+          padding: 8px 16px;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .home h1 {
+          font-size: 24px;
+      }
+  
+      .home p {
+          font-size: 12px;
+      }
+  
+      .homecontent button {
+          font-size: 12px;
+          padding: 6px 12px;
+      }
+  }
+  
+  /* 🌟 Base Styles */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Trusted Companies Section */
+  .trusted-companies {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .trusted-companies h2 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: gray;
+  }
+  
+  /* 🌟 Default Layout for Large Screens (Desktops) */
+  .company-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px; 
+  }
+  
+  .company-logos img {
+    margin: 0 20px;
+    max-height: 50px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .company-logos img:hover {
+    transform: scale(1.1); 
+  }
+  
+  /* 🌟 Responsive Design */
+  
+  /* 📌 Large Screens (max-width: 1200px) */
+  @media (max-width: 1200px) {
+    .container {
+      width: 90%;
+    }
+  
+    .company-logos {
+      gap: 100px;
+    }
+  }
+  
+  /* 📌 Tablets (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .company-logos {
+      gap: 80px; 
+      flex-wrap: wrap; 
+    }
+  
+    .company-logos img {
+      max-height: 45px; 
+    }
+  
+    .trusted-companies h2 {
+      font-size: 1.3em;
+    }
+  }
+  
+  /* 📌 Small Tablets & Large Phones (max-width: 768px) */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+    }
+  
+    .company-logos {
+      gap: 40px; 
+      justify-content: center;
+    }
+  
+    .company-logos img {
+      max-height: 40px;
+      margin: 10px;
+    }
+  
+    .trusted-companies h2 {
+      font-size: 1.2em;
+    }
+  }
+  
+  /* 📌 Mobile Devices (max-width: 600px) */
+  @media (max-width: 600px) {
+    .company-logos {
+      flex-direction: column; 
+      gap: 30px;
+    }
+  
+    .company-logos img {
+      max-height: 35px; 
+    }
+  
+    .trusted-companies h2 {
+      font-size: 1.1em;
+    }
+  }
+  
+  /* 📌 Small Mobile Screens (max-width: 480px) */
+  @media (max-width: 480px) {
+    .container {
+      width: 100%;
+      padding: 0 15px;
+    }
+  
+    .company-logos {
+      gap: 20px;
+    }
+  
+    .company-logos img {
+      max-height: 30px; 
+    }
+  
+    .trusted-companies h2 {
+      font-size: 1em;
+    }
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .name{
+    background-color: white;
+    color: black;
+    padding-bottom: 20px;
+    font-size: 22px;
+    font-weight: 200;
+    text-align: start;
+  }
+  
+  .image{
+    width: 700px;
+    height: 600px;
+  }
+  
+  .interior-content p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .interiors-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .interior-preview img {
+      max-width: 300px;
+    }
+  
+    .interior-details {
+      width: 100%;
+    }
+  
+    .interior-item {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .interior-item img {
+      width: 80px;
+    }
+  }
+  
+  /* Interiors Section: Side-by-Side Layout */
+  .interiors-section {
+    display: flex;
+    align-items: center;
+    gap: 50px; 
+  }
+  
+  /* Left Side: Preview Image & Title */
+  .interior-preview {
+    flex: 1;
+    text-align: center;
+  }
+  .interior-preview img {
+    width: 800px;
+    max-width: 600px; /* Increased image size */
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Right Side: Interior Details */
+  .interior-details {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Interior Item: Side-by-Side Layout */
+  .interior-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  /* Interior Images */
+  .interior-item img {
+    width: 150px; 
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .interiors-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .interior-preview img {
+      max-width: 400px; 
+    }
+  
+    .interior-item {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .interior-item img {
+      width: 100px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .interior-preview img {
+      max-width: 350px;
+    }
+  
+    .interior-item img {
+      width: 80px;
+    }
+  }
+  
+  .products-section {
+    padding: 20px;
+  }
+  
+  .products-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .product-filters {
+    margin-bottom: 20px;
+  }
+
+.prodect img{
+    margin: 10px;
+}
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .prodect {
+      justify-content: center;
+      gap: 10px;
+      text-align: center;
+    }
+    .trusted-companies{
+        position: relative;
+        bottom: 100px;
+    }
+
+  }
+  
+  /* Media query for extra small screens */
+  @media (max-width: 480px) {
+    .prodect img {
+      width: 100px;  /* Even smaller images on very small screens */
+    }
+  }
+
+  
+/*footer*/
+.footer .hai{
+    margin-left: -100px;
+}
+/* Subscribe Section */
+.subscribe-section {
+    background-color: #d2a87a; /* Brown background */
+    padding: 30px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+  }
+  
+  .subscribe-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  .subscribe-section p {
+    margin-bottom: 20px;
+  }
+  
+  .subscribe-section .email-input {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 250px;
+  }
+  
+  .subscribe-section .subscribe-button {
+    padding: 8px 20px;
+    background-color: #e07a5f; /* Lighter red-brown */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+   
+  }
+  
+  /* Footer */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #d2a87a; /* Brown background */
+  }
+  
+  .footer p {
+    margin-bottom: 10px;
+  }
+  
+  .footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 5px;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (min-width: 768px) {
+    .footer {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .footer p {
+      margin-right: 20px;
+    }
+  
+    .footer a {
+      margin: 0 10px;
+    }
+  
+    .subscribe-section {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .subscribe-section .email-input {
+      width: 300px;
+    }
+  
+    .subscribe-section .subscribe-button {
+      margin-top: 0;
+    }
+  }
+  

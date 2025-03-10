@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+     
+  <nav class="navbar">
+    <div class="navbar-container">
+
+        <a href="#" class="navbar-brand"><img src="./images/APJ Furniture.jpg" alt="Logo"></a>
+
+       <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+
+        <ul class="navbar-menu" id="navbarMenu">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    Product
+                    <img src="./images/icons8-expand-arrow-24.png" alt="Arrow" class="arrow-icon">
+                </a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+
+        <a href="#" class="navbar-brands"><img src="./images/icon Section.png" alt="Icons"></a>
+    </div>
+</nav>
+
+
+<!--HOME PAGE-->
+<div class="home">
+  <img src="./images/Rectangle 88.jpg" alt="" class="img">
+
+  <div class="homecontent">
+      <h1 style="color:rgb(248, 135, 6);">Help You To Make<br> Modern Furniture</h1>
+      <p>We help you to create and organize your room to be<br>more cozy, designed by professional interior<br> designers.</p>
+      <button>See Our Product</button>
+  </div>
+</div> <br> <br><br> <br><br> <br><br> <br><br> <br>
+
+<div class="container">
+  <div class="trusted-companies">
+    <h2>Some of our trusted companies</h2>
+    <div class="company-logos">
+      <img src="./images/google-logo-black-transparent 1 (1).jpg" alt="Google">
+      <img src="./images/google-logo-black-transparent 3.jpg" alt="Tokopedia">
+      <img src="./images/google-logo-black-transparent 4.jpg" alt="Tiket.com">
+      <img src="./images/google-logo-black-transparent 2.jpg" alt="Microsoft">
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="interiors-section">
+    <div class="interior-preview">
+      <div class="name">Some of the interiors that we <br> provide for you</div>
+      <img src="./images/Rectangle 91.jpg" alt="Interior Preview" id="image"> 
+    </div>
+    <div class="interior-details">
+      <div class="interior-item">
+          <img src="./images/Rectangle 92.jpg" alt="">
+          <div class="interior-content">
+              <h3>Living Room</h3>
+              <p>As one of the most-frequented spots in the home, a living room sets the tone for the rest of the house.</p>
+              <a href="#" class="read-more">Read More</a>
+          </div>
+      </div>
+      <div class="interior-item">
+          <img src="./images/Rectangle 88.jpg" alt="">
+          <div class="interior-content">
+              <h3>Bedroom</h3>
+              <p>Unleash your creativity and design a bedroom that is not only comfortable but also a reflection of your style to start and end your day.</p>
+              <a href="#" class="read-more">Read More</a>
+          </div>
+      </div>
+      <div class="interior-item">
+          <img src="./images/Rectangle 92 (1).jpg" alt="">
+          <div class="interior-content">
+              <h3>Office</h3>
+              <p>The home office designs are maximized for efficient space, and improvised by Spacejoy designers.</p>
+              <a href="#" class="read-more">Read More</a>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="products-section">
+    <h2>Products</h2>
+    <div class="product-filters">
+      <button class="active">All</button>
+      <button>Bed</button>
+      <button>Chair</button>
+      <button>Light</button>
+      <button>Sofa</button>
+    </div>
+    <img src="" alt="">
+      
+    </div>
+  </div>
+
+<div class="prodect">
+
+    <img src="./images/1.png" alt="">
+    <img src="./images/2.png" alt="">
+    <img src="./images/3.png" alt="">
+    <img src="./images/4.png" alt="">
+</div>
+
+
+    <!--footer-->
+    <div class="subscribe-section">
+        <h2>SUBSCRIBE TO GET THE LAST NEWS ABOUT US</h2>
+        <p>We recommend you to subscribe to our newspaper, enter your email to get our daily update about us.</p>
+        <input type="email" class="email-input" placeholder="Enter your email address">
+        <button class="subscribe-button">Subscribe</button>
+      </div> 
+      
+      <div class="footer">
+        <p>PT. ANDARA PANCA JAYA</p>
+        <p>2000 All rights reserved</p>
+        <a href="#">About Us</a>
+        <a href="#">Partnership</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      
+
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navbarMenu").classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
